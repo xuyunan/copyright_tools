@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="600,400" caption="0,0,0,35">
+  <VBox bkcolor="bk_wnd_darkcolor">
+    <!-- 标题栏 -->
+    <HBox width="stretch" height="35" bkcolor="bk_wnd_lightcolor">
+      <Control width="auto" height="auto" bkimage="logo_18x18.png" valign="center" margin="8"/>
+      <Label text="软著代码生成工具" valign="center" margin="8"/>
+      <Control />
+      <Button class="btn_wnd_settings" name="settings" margin="4,6,0,0"/>
+      <Button class="btn_wnd_min" name="minbtn" margin="4,6,0,0"/>
+      <Box width="21" margin="4,6,0,0">
+        <Button class="btn_wnd_max" name="maxbtn"/>
+        <Button class="btn_wnd_restore" name="restorebtn" visible="false"/>
+      </Box>
+      <Button class="btn_wnd_close" name="closebtn" margin="4,6,8,0"/>
+    </HBox>
+
+    <!-- 选择目录 -->
+    
+    <HBox width="stretch" padding="20,20,20,0" childmargin="20" height="88">
+        <VBox>
+            <Label text="项目目录" margin="2"/>
+            <HBox childmargin="10" valign="center" padding="0,3">
+                <RichEdit class="simple input" height="30" padding="6,6,6" promptmode="true" prompttext="请选择文件路径" promptcolor="lightcolor" name="edit_source"/>
+                <Button class="btn_global_white_80x30" text="选择" name="btn_source"/>
+            </HBox>
+        </VBox>
+
+        <VBox>
+            <Label text="输出目录" margin="2"/>
+            <HBox childmargin="10" valign="center" padding="0,3">
+                <RichEdit class="simple input" height="30" padding="6,6,6" promptmode="true" prompttext="请选择文件路径" promptcolor="lightcolor" name="edit_target"/>
+                <Button class="btn_global_white_80x30" text="选择" name="btn_target"/>
+            </HBox>
+        </VBox>
+    </HBox>
+
+    <!-- 选择文件类型 -->
+
+    <VBox height="80" width="stretch" padding="20,0,20,0">
+        <Label text="文件类型" margin="2"/>
+        <RichEdit class="prompt" name="edit_ext" bkcolor="bk_wnd_lightcolor" width="stretch" height="stretch"
+                  multiline="true" vscrollbar="true" hscrollbar="false" autovscroll="true"
+                  normaltextcolor="darkcolor" wantreturnmsg="true" rich="true" margin="0,5" padding="6,6,6"/>
+    </VBox>
+
+    <!-- 日志 -->
+    
+    <VBox padding="20,20,20,20"> 
+        <Label text="日志" margin="2"/>
+        <RichEdit class="prompt" name="edit_log" bkcolor="bk_wnd_lightcolor" width="stretch" height="stretch"
+                  multiline="true" vscrollbar="true" hscrollbar="false" autovscroll="true"
+                  normaltextcolor="darkcolor" wantreturnmsg="true" rich="true" margin="0,5" padding="6,6,6"/>
+    </VBox>
+
+    <HBox width="stretch" height="auto" padding="0,20,0,20">
+        <Control />
+        <Button class="btn_global_blue_80x30" text="开始" valign="center" name="btn_start"/>
+        <Control />
+    </HBox>
+  </VBox>
+</Window>
