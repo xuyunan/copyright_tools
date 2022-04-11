@@ -3,4 +3,4 @@
 
 会在输出目录生成一个code.txt代码文件.
 
-![](./screenshot.png)
+![](./screenshot.PNG)
