@@ -9,8 +9,8 @@
 		</HBox>
 		<Box>
 			<VBox margin="0,0,0,0" valign="center" halign="center" width="stretch" height="auto">
-				<Label name="tooltip" halign="center" text="一个提取代码的工具"/>
-				<Label name="link" width="stretch" text="https://xuyunan.github.io/" normaltextcolor="blue" align="center" cursortype="hand" margin="0,8"/>
+				<Label name="tooltip" halign="center" text="软著代码生成工具v1.0.0"/>
+				<Label name="link" width="stretch" text="https://github.com/xuyunan/copyright_tools" normaltextcolor="blue" align="center" cursortype="hand" margin="0,8"/>
 			</VBox>
 		</Box>
 	</VBox>
